@@ -16,19 +16,6 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
 
- <script >
-                  function comprobar(){
-
-                    pass=document.f1.pass.value
-                    rpass=document.f1.rpass.value
-
-                    if (clave1!=clave2)
-                      alert("Contaseñas diferentes"
-
-                        )
-                  }
-
-                </script>
 </head>
 
 
@@ -60,11 +47,11 @@
             <div class="form-row">
               <div class="col-md-6">
                 <label for="pass">Contraseña</label>
-                <input class="form-control" name="pass" id="pass" type="password" placeholder="contraseña" required="">
+                <input class="form-control" name="pass1" id="pass1" type="password" placeholder="contraseña" required="">
               </div>
               <div class="col-md-6">
                 <label for="confirmarcontraseña">Confirmar contraseña</label>
-                <input class="form-control" id="rpass"  name="rpass" type="password" placeholder="Confirmar contraseña">
+                <input class="form-control" id="pass2"  name="pass2" type="password" placeholder="Confirmar contraseña">
                
 
                 
