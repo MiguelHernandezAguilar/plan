@@ -42,27 +42,27 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="tables.html">
             <i class="fa fa-fw fa-table"></i>
-            <span class="nav-link-text">Tables</span>
+            <span class="nav-link-text">Tabla de desempeño</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-wrench"></i>
-            <span class="nav-link-text">Components</span>
+            <span class="nav-link-text">Complementos</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseComponents">
-            <li>
+            <!--<li>
               <a href="navbar.html">Navbar</a>
-            </li>
+            </li>-->
             <li>
-              <a href="cards.html">Cards</a>
+              <a href="cards.html">Actividades</a>
             </li>
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-file"></i>
-            <span class="nav-link-text">Example Pages</span>
+            <span class="nav-link-text">Cursos y  paginas de consulta</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li>
@@ -79,6 +79,7 @@
             </li>
           </ul>
         </li>
+        <!--
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-sitemap"></i>
@@ -113,7 +114,7 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
           <a class="nav-link" href="#">
             <i class="fa fa-fw fa-link"></i>
-            <span class="nav-link-text">Link</span>
+            <span class="nav-link-text">Link</span>-->
           </a>
         </li>
       </ul>
@@ -125,38 +126,68 @@
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
+
+
+     <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-4" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-pencil fa-fw">  <br> Publicar</i>
+             
+
+            <span class="d-lg-none">Publicaciones
+              <span class="badge badge-pill badge-warning"></span>
+            </span>
+            <span class="indicator text-success d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+            <h6 class="dropdown-header">Publicar: </h6>
+            <form action="nueva_noticia.php" method="post"> <!-- Creamos el formulario, utilizando la etiqueta form, cuyo atributo action="" indicará donde se procesará el formulario --> 
+           <strong>Asunto</strong> 
+           <input name="titulo" type="text" />  <br /> 
+           <strong>Descripcion </strong>
+            <textarea name="texto" class="textarea"> </textarea> <br /> 
+          <input class="button badge-primary"  type="submit" name="añadir" value="Añadir noticia" /> 
+             </form>
+            <!--<div class="dropdown-divider"></div>-->
+            
+
+        
+
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-fw fa-envelope"></i>
-            <span class="d-lg-none">Messages
-              <span class="badge badge-pill badge-primary"> New</span>
+            <span class="d-lg-none">Mensajes
+              <span class="badge badge-pill badge-primary"> Nuevos</span>
             </span>
             <span class="indicator text-primary d-none d-lg-block">
               <i class="fa fa-fw fa-circle"></i>
             </span>
           </a>
-          <div class="dropdown-menu" aria-labelledby="messagesDropdown">
-            <h6 class="dropdown-header">  New Messages:</h6>
+          
+                    <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+            <h6 class="dropdown-header">  Nuevos mensajes:</h6>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">
               <strong>David Miller</strong>
               <span class="small float-right text-muted">11:21 AM</span>
-              <div class="dropdown-message small">Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</div>
+              <div class="dropdown-message small">
+¡Hola! ¡Esta nueva versión de SB Admin es increíble! Estos mensajes se recortan cuando llegan al final de la caja para que no se desborden hacia los lados!</div>
             </a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">
               <strong>Jane Smith</strong>
-              <span class="small float-right text-muted">11:21 AM</span>
-              <div class="dropdown-message small">I was wondering if you could meet for an appointment at 3:00 instead of 4:00. Thanks!</div>
+              <span class="small float-right text-muted">1:41 AM</span>
+              <div class="dropdown-message small">Me preguntaba si podría reunirse para una cita a las 3:00 en lugar de a las 4:00. Gracias!</div>
             </a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">
               <strong>John Doe</strong>
-              <span class="small float-right text-muted">11:21 AM</span>
-              <div class="dropdown-message small">I've sent the final files over to you for review. When you're able to sign off of them let me know and we can discuss distribution.</div>
+              <span class="small float-right text-muted">09:10 AM</span>
+              <div class="dropdown-message small">Te envié los archivos finales para que los revises. Cuando pueda cerrar sesión, avísenme y podremos discutir la distribución.</div>
             </a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item small" href="#">View all messages</a>
+            <a class="dropdown-item small" href="#">Ver todos los mensajes</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -170,7 +201,7 @@
             </span>
           </a>
           <div class="dropdown-menu" aria-labelledby="alertsDropdown">
-            <h6 class="dropdown-header">New Alerts:</h6>
+            <h6 class="dropdown-header">Nuevas Actividades:</h6>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">
               <span class="text-success">
@@ -199,13 +230,13 @@
               <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
             </a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item small" href="#">View all alerts</a>
+            <a class="dropdown-item small" href="#">Ver todas las actividades</a>
           </div>
         </li>
         <li class="nav-item">
           <form class="form-inline my-2 my-lg-0 mr-lg-2">
             <div class="input-group">
-              <input class="form-control" type="text" placeholder="Search for...">
+              <input class="form-control" type="text" placeholder="Buscar...">
               <span class="input-group-btn">
                 <button class="btn btn-primary" type="button">
                   <i class="fa fa-search"></i>
@@ -228,7 +259,7 @@
         <li class="breadcrumb-item">
           <a href="#">Dashboard</a>
         </li>
-        <li class="breadcrumb-item active">Mi tablero</li>
+        <li class="breadcrumb-item active">Tablero</li>
       </ol>
       <!-- Icon Cards-->
       <div class="row">
@@ -254,10 +285,10 @@
               <div class="card-body-icon">
                 <i class="fa fa-fw fa-list"></i>
               </div>
-              <div class="mr-5">11 New Tasks!</div>
+              <div class="mr-5">11 Nuevas tareas!</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
+              <span class="float-left">Ver mas</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
               </span>
@@ -1114,7 +1145,7 @@
           </div>
           <div class="modal-body">Seleccione "Salir" Si esta seguro.</div>
           <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
             <a class="btn btn-primary" href="login.html">Salir</a>
           </div>
         </div>
